@@ -9,7 +9,8 @@ interface PercentageMap {
   [key: string]: number;
 }
 
-interface ResultData {
+// ResultData 인터페이스 앞에 'export' 키워드를 추가하여 외부에서 임포트 가능하게 합니다.
+export interface ResultData {
   mbtiType: string;
   charMtiType: string;
   percentages: PercentageMap;
@@ -58,15 +59,14 @@ export const calculateResult = (answers: number[], totalQuestions: number): Resu
   charMtiType += scores['C'] >= scores['D'] ? 'C' : 'D';
 
   // --- 백분율 계산 ---
-  // 각 지표별 최대 점수를 가정하여 백분율을 계산합니다.
-  // 7점 척도 (3 ~ -3)이므로, 각 질문당 최대 3점, 최소 -3점.
-  // 예를 들어, E 타입 질문이 총 N개라면, E 점수의 최대값은 N * 3, 최소값은 N * -3
-  // 백분율은 (현재 점수 - 최소값) / (최대값 - 최소값) * 100 으로 계산합니다.
-  // 이는 0% ~ 100% 사이의 스케일로 정규화하는 방법입니다.
-
   const percentages: PercentageMap = {};
 
-  const calculateAxisPercentage = (positiveType: string, negativeType: string, statements: Statement[]) => {
+  // positiveType과 negativeType의 타입을 구체적인 리터럴 유니언으로 지정하여 오류 해결
+  const calculateAxisPercentage = (
+    positiveType: 'E' | 'I' | 'S' | 'N' | 'T' | 'F' | 'J' | 'P' | 'A' | 'B' | 'C' | 'D',
+    negativeType: 'E' | 'I' | 'S' | 'N' | 'T' | 'F' | 'J' | 'P' | 'A' | 'B' | 'C' | 'D',
+    statements: Statement[]
+  ) => {
     const relevantStatements = statements.filter(stmt => stmt.type.includes(positiveType) || stmt.type.includes(negativeType));
     const numRelevantStatements = relevantStatements.length;
 
@@ -76,20 +76,10 @@ export const calculateResult = (answers: number[], totalQuestions: number): Resu
       return;
     }
 
-    const positiveScore = scores[positiveType];
-    const negativeScore = scores[negativeType];
-
-    // 예를 들어, E와 I가 있다면, E 질문의 점수와 I 질문의 점수를 합산하여 E-I의 총 점수를 계산합니다.
-    // E 질문에 +3, I 질문에 +3이면 E-I 합계는 0이 됩니다.
-    // 즉, 각 질문이 해당 지표의 긍정적인 방향으로 점수를 주고 있기 때문에
-    // E 질문에 답한 점수 총합과 I 질문에 답한 점수 총합을 비교하여 퍼센트를 계산하는 것이 더 직관적입니다.
-    // 여기서는 각 유형에 대한 절대적인 점수를 합산했으므로, 그 점수를 바탕으로 퍼센트를 계산합니다.
-    // A-B, C-D는 서로 독립적인 축이므로, 각 타입의 점수를 상대적으로 비교하여 백분율을 산정합니다.
-
     // 각 지표의 총 점수를 사용하여 백분율을 계산합니다.
     // 각 지표의 질문 개수 * 3 이 최대 점수, * -3 이 최소 점수라고 가정합니다.
     // 이를 정규화하여 0-100%로 나타냅니다.
-    // 예를 들어, E와 I 질문의 총 개수
+
     const totalEStatements = statements.filter(stmt => stmt.type.includes('E')).length;
     const totalIStatements = statements.filter(stmt => stmt.type.includes('I')).length;
     const totalSStatements = statements.filter(stmt => stmt.type.includes('S')).length;

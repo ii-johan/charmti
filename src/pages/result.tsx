@@ -1,13 +1,18 @@
-// pages/result.tsx
+// src/pages/result.tsx
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
 import { calculateResult } from '@/utils/calculateResult';
+
+// calculateResult.ts에서 정의된 ResultData 인터페이스를 가져옵니다.
+import { ResultData } from '@/utils/calculateResult'; 
+
 import styles from '../styles/Result.module.css';
 
 const ResultPage = () => {
   const router = useRouter();
-  const [result, setResult] = useState<any>(null);
+  // result 상태 변수의 타입을 'any' 대신 'ResultData | null'로 명시합니다.
+  const [result, setResult] = useState<ResultData | null>(null); 
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -25,6 +30,7 @@ const ResultPage = () => {
       });
 
       if (answers.length > 0 && totalQuestions > 0) {
+        // calculateResult 함수는 ResultData 타입을 반환하므로 타입 문제가 없습니다.
         const calculatedResult = calculateResult(answers, totalQuestions);
         setResult(calculatedResult);
         setIsLoading(false);
