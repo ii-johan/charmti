@@ -1,0 +1,166 @@
+/* styles/Test.module.css */
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #a8e063, #56ab2f); /* 녹색 계열 그라데이션 */
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  position: relative; /* 프로그레스 바 위치를 위해 */
+}
+
+.loadingText {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* 로딩 스피너 */
+.spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.mainContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.questionCounter {
+  font-size: 1.2rem;
+  color: #eee;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.statementBox {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  min-height: 150px; /* 충분한 높이 확보 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.statementText {
+  font-size: 1.7rem;
+  color: #333;
+  line-height: 1.6;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-wrap: wrap; /* 버튼이 많으므로 줄바꿈 허용 */
+  justify-content: center;
+  gap: 15px; /* 버튼 간 간격 */
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.answerButton {
+  padding: 15px 25px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  min-width: 120px; /* 버튼 최소 너비 */
+}
+
+.answerButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.answerButton:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.progressBarContainer {
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  height: 15px;
+  overflow: hidden;
+  margin-top: auto; /* 하단에 고정 */
+  margin-bottom: 20px;
+}
+
+.progressBar {
+  height: 100%;
+  background-color: #f7d633; /* ProgressBar 색상 */
+  border-radius: 10px;
+  transition: width 0.3s ease-out;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+  .statementText {
+    font-size: 1.3rem;
+    padding: 20px;
+  }
+  .answerButton {
+    font-size: 0.95rem;
+    padding: 12px 20px;
+    min-width: 100px;
+  }
+  .buttonContainer {
+    gap: 10px;
+  }
+  .progressBarContainer {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.8rem;
+  }
+  .statementText {
+    font-size: 1.1rem;
+    padding: 15px;
+  }
+  .answerButton {
+    padding: 10px 15px;
+    min-width: 80px;
+  }
+}
