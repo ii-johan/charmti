@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #a8e063, #56ab2f); /* 녹색 계열 그라데이션 */
+  background: linear-gradient(135deg, #95a382, #b3c3ab); /* 녹색 계열 그라데이션 */
   color: #fff;
   font-family: 'Arial', sans-serif;
   text-align: center;
@@ -47,16 +47,16 @@
 }
 
 .title {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
   color: #fff;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .questionCounter {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #eee;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   font-weight: bold;
 }
 
@@ -64,7 +64,7 @@
   background-color: rgba(255, 255, 255, 0.95);
   border-radius: 15px;
   padding: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   min-height: 150px; /* 충분한 높이 확보 */
   display: flex;
@@ -86,9 +86,9 @@
   display: flex;
   flex-wrap: wrap; /* 버튼이 많으므로 줄바꿈 허용 */
   justify-content: center;
-  gap: 15px; /* 버튼 간 간격 */
-  width: 100%;
-  margin-bottom: 40px;
+  gap: 5px; /* 버튼 간 간격 */
+  width: 50%;
+  margin-bottom: 10px;
 }
 
 .answerButton {

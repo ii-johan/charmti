@@ -102,49 +102,49 @@ const TestPage = () => {
             style={{ backgroundColor: buttonColors.strongPositive }}
             onClick={() => handleAnswer(3)}
           >
-            매우 그렇다
+            Yes++
           </button>
           <button
             className={styles.answerButton}
             style={{ backgroundColor: buttonColors.positive }}
             onClick={() => handleAnswer(2)}
           >
-            그렇다
+            Yes+
           </button>
           <button
             className={styles.answerButton}
             style={{ backgroundColor: buttonColors.mildPositive }}
             onClick={() => handleAnswer(1)}
           >
-            조금 그렇다
+            Yes
           </button>
           <button
             className={styles.answerButton}
             style={{ backgroundColor: buttonColors.neutral }}
             onClick={() => handleAnswer(0)}
           >
-            보통이다
+            Mid
           </button>
           <button
             className={styles.answerButton}
             style={{ backgroundColor: buttonColors.mildNegative }}
             onClick={() => handleAnswer(-1)}
           >
-            조금 아니다
+            No
           </button>
           <button
             className={styles.answerButton}
             style={{ backgroundColor: buttonColors.negative }}
             onClick={() => handleAnswer(-2)}
           >
-            아니다
+            No+
           </button>
           <button
             className={styles.answerButton}
             style={{ backgroundColor: buttonColors.strongNegative }}
             onClick={() => handleAnswer(-3)}
           >
-            전혀 아니다
+            No++
           </button>
         </div>
         <div className={styles.progressBarContainer}>
