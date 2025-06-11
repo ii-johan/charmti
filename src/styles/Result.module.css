@@ -144,7 +144,7 @@
 
 .barFillLeft {
   height: 100%;
-  background-color: #88d49f; /* 왼쪽 지표 색상 */
+  background-color: #2ea050; /* 왼쪽 지표 색상 */
   transition: width 0.8s ease-out;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -152,7 +152,7 @@
 
 .barFillRight {
   height: 100%;
-  background-color: #f7d633; /* 오른쪽 지표 색상 */
+  background-color: #b49610; /* 오른쪽 지표 색상 */
   transition: width 0.8s ease-out;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;

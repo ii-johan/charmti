@@ -33,13 +33,13 @@ export default function Home() {
             className={styles.startButton}
             onClick={() => handleStartTest(60)}
           >
-            60문항으로 시작하기 (간편)
+            60문항 시작하기 (간편)
           </button>
           <button
             className={styles.startButton}
             onClick={() => handleStartTest(120)}
           >
-            120문항으로 시작하기 (심층)
+            120문항 시작하기 (심층)
           </button>
         </div>
 
