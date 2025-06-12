@@ -69,15 +69,15 @@ const ResultPage = () => {
   const { mbtiType, charMtiType, percentages, mbtiDescription, charMtiADescription, charMtiCDescription } = result;
 
   const mbtiAxesData = [
-    { leftType: 'E', rightType: 'I', leftLabel: '외향', rightLabel: '내향', leftPercentage: percentages['E'] || 50, rightPercentage: percentages['I'] || 50 },
-    { leftType: 'S', rightType: 'N', leftLabel: '감각', rightLabel: '직관', leftPercentage: percentages['S'] || 50, rightPercentage: percentages['N'] || 50 },
-    { leftType: 'T', rightType: 'F', leftLabel: '사고', rightLabel: '감정', leftPercentage: percentages['T'] || 50, rightPercentage: percentages['F'] || 50 },
-    { leftType: 'J', rightType: 'P', leftLabel: '판단', rightLabel: '인식', leftPercentage: percentages['J'] || 50, rightPercentage: percentages['P'] || 50 },
+    { leftType: 'E', rightType: 'I', leftLabel: 'E', rightLabel: 'I', leftPercentage: percentages['E'] || 50, rightPercentage: percentages['I'] || 50 },
+    { leftType: 'S', rightType: 'N', leftLabel: 'S', rightLabel: 'N', leftPercentage: percentages['S'] || 50, rightPercentage: percentages['N'] || 50 },
+    { leftType: 'T', rightType: 'F', leftLabel: 'T', rightLabel: 'F', leftPercentage: percentages['T'] || 50, rightPercentage: percentages['F'] || 50 },
+    { leftType: 'J', rightType: 'P', leftLabel: 'J', rightLabel: 'P', leftPercentage: percentages['J'] || 50, rightPercentage: percentages['P'] || 50 },
   ];
 
   const charMtiAxesData = [
-    { leftType: 'A', rightType: 'B', leftLabel: '안정', rightLabel: '열정', leftPercentage: percentages['A'] || 50, rightPercentage: percentages['B'] || 50 },
-    { leftType: 'C', rightType: 'D', leftLabel: '매력', rightLabel: '찌질', leftPercentage: percentages['C'] || 50, rightPercentage: percentages['D'] || 50 },
+    { leftType: 'A', rightType: 'B', leftLabel: 'A', rightLabel: 'B', leftPercentage: percentages['A'] || 50, rightPercentage: percentages['B'] || 50 },
+    { leftType: 'C', rightType: 'D', leftLabel: 'C', rightLabel: 'D', leftPercentage: percentages['C'] || 50, rightPercentage: percentages['D'] || 50 },
   ];
 
   return (
