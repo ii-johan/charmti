@@ -69,15 +69,15 @@ const ResultPage = () => {
   const { mbtiType, charMtiType, percentages, mbtiDescription, charMtiADescription, charMtiCDescription } = result;
 
   const mbtiAxesData = [
-    { leftType: 'E', rightType: 'I', leftLabel: '외향형', rightLabel: '내향형', leftPercentage: percentages['E'] || 50, rightPercentage: percentages['I'] || 50 },
-    { leftType: 'S', rightType: 'N', leftLabel: '감각형', rightLabel: '직관형', leftPercentage: percentages['S'] || 50, rightPercentage: percentages['N'] || 50 },
-    { leftType: 'T', rightType: 'F', leftLabel: '사고형', rightLabel: '감정형', leftPercentage: percentages['T'] || 50, rightPercentage: percentages['F'] || 50 },
-    { leftType: 'J', rightType: 'P', leftLabel: '판단형', rightLabel: '인식형', leftPercentage: percentages['J'] || 50, rightPercentage: percentages['P'] || 50 },
+    { leftType: 'E', rightType: 'I', leftLabel: '외향', rightLabel: '내향', leftPercentage: percentages['E'] || 50, rightPercentage: percentages['I'] || 50 },
+    { leftType: 'S', rightType: 'N', leftLabel: '감각', rightLabel: '직관', leftPercentage: percentages['S'] || 50, rightPercentage: percentages['N'] || 50 },
+    { leftType: 'T', rightType: 'F', leftLabel: '사고', rightLabel: '감정', leftPercentage: percentages['T'] || 50, rightPercentage: percentages['F'] || 50 },
+    { leftType: 'J', rightType: 'P', leftLabel: '판단', rightLabel: '인식', leftPercentage: percentages['J'] || 50, rightPercentage: percentages['P'] || 50 },
   ];
 
   const charMtiAxesData = [
-    { leftType: 'A', rightType: 'B', leftLabel: '안정형', rightLabel: '열정형', leftPercentage: percentages['A'] || 50, rightPercentage: percentages['B'] || 50 },
-    { leftType: 'C', rightType: 'D', leftLabel: '매력형', rightLabel: '찌질형', leftPercentage: percentages['C'] || 50, rightPercentage: percentages['D'] || 50 },
+    { leftType: 'A', rightType: 'B', leftLabel: '안정', rightLabel: '열정', leftPercentage: percentages['A'] || 50, rightPercentage: percentages['B'] || 50 },
+    { leftType: 'C', rightType: 'D', leftLabel: '매력', rightLabel: '찌질', leftPercentage: percentages['C'] || 50, rightPercentage: percentages['D'] || 50 },
   ];
 
   return (

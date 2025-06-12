@@ -21,11 +21,11 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Mbti <span className={styles.highlight}>CharMTI</span> Test
+          New <span className={styles.highlight}>CharMTI</span> Test
         </h1>
 
         <p className={styles.description}>
-          당신의 감정 스타일(Atlas/Blaze)과 매력 스타일(Charm/Dawn)을 알아보세요!
+          MBTI유형과 매력유형을 함께 알아보세요!
         </p>
 
         <div className={styles.buttonContainer}>
@@ -33,18 +33,18 @@ export default function Home() {
             className={styles.startButton}
             onClick={() => handleStartTest(60)}
           >
-            60문항 시작하기 (간편)
+            간편테스트 60문항
           </button>
           <button
             className={styles.startButton}
             onClick={() => handleStartTest(120)}
           >
-            120문항 시작하기 (심층)
+            심층테스트 120문항
           </button>
         </div>
 
         <p className={styles.footerText}>
-          당신의 특별한 매력을 지금 바로 확인해보세요!
+          Here are my two cents.
         </p>
       </main>
     </div>

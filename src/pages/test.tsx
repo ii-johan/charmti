@@ -40,13 +40,13 @@ const TestPage = () => {
 
   // 답변 버튼 색상 설정
   const buttonColors = {
-    strongPositive: '#84cc16', // Yes++
-    positive: '#a3e635',     // Yes+
+    strongPositive: '#bef264', // Yes++
+    positive: '#bef264',     // Yes+
     mildPositive: '#bef264', // Yes
-    neutral: '#fed7aa',      // Mid
+    neutral: '#7777bb',      // Mid
     mildNegative: '#fb923c', // No
-    negative: '#f97316',     // No+
-    strongNegative: '#ea580c' // No++
+    negative: '#fb923c',     // No+
+    strongNegative: '#fb923c' // No++
   };
 
   // 답변 처리 함수
