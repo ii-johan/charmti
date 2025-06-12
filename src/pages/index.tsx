@@ -25,7 +25,7 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          MBTI유형과 매력유형을 함께 알아보세요!
+          MBTI유형+매력유형
         </p>
 
         <div className={styles.buttonContainer}>
