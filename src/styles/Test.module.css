@@ -55,13 +55,13 @@
 
 .questionCounter {
   font-size: 1rem;
-  color: #eee;
+  color: #fff9e0;
   margin-bottom: 2px;
   font-weight: bold;
 }
 
 .statementBox {
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 253, 207, 0.95);
   border-radius: 15px;
   padding: 5px;
   margin-bottom: 10px;
@@ -87,7 +87,7 @@
   flex-wrap: wrap; /* 버튼이 많으므로 줄바꿈 허용 */
   justify-content: center;
   gap: 2px; /* 버튼 간 간격 */
-  width: 100%;
+  width: 50%;
   margin-bottom: 5px;
 }
 
