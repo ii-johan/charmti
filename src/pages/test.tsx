@@ -43,7 +43,7 @@ const TestPage = () => {
     strongPositive: '#bef264', // Yes++
     positive: '#bef264',     // Yes+
     mildPositive: '#bef264', // Yes
-    neutral: '#7777bb',      // Mid
+    neutral: '#77bb',      // Mid
     mildNegative: '#fb923c', // No
     negative: '#fb923c',     // No+
     strongNegative: '#fb923c' // No++
@@ -84,12 +84,12 @@ const TestPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>CharMTI 테스트 ({questionsToLoad.length}문항)</title>
+        <title>CharMTI Test({questionsToLoad.length}문항)</title>
         <meta name="description" content="CharMTI 테스트 진행 중" />
       </Head>
 
       <main className={styles.mainContent}>
-        <h1 className={styles.title}>CharMTI 테스트</h1>
+        <h1 className={styles.title}></h1>
         <p className={styles.questionCounter}>
           {currentStatementIndex + 1} / {questionsToLoad.length}
         </p>
