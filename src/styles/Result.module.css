@@ -108,19 +108,19 @@
 .barChartRow {
   display: flex;
   align-items: center;
-  gap: 10px; /* 라벨과 바 사이 간격 */
+  gap: 2px; /* 라벨과 바 사이 간격 */
   font-weight: bold;
 }
 
 .axisLabelLeft {
-  width: 40px; /* 라벨 너비 고정 */
+  width: 60px; /* 라벨 너비 고정 */
   text-align: right;
   color: #fff;
   font-size: 1.1rem;
 }
 
 .axisLabelRight {
-  width: 40px; /* 라벨 너비 고정 */
+  width: 60px; /* 라벨 너비 고정 */
   text-align: left;
   color: #fff;
   font-size: 1.1rem;

@@ -43,7 +43,7 @@ const TestPage = () => {
     strongPositive: '#bef264', // Yes++
     positive: '#bef264',     // Yes+
     mildPositive: '#bef264', // Yes
-    neutral: '#77bb',      // Mid
+    neutral: '#99bb',      // Mid
     mildNegative: '#fb923c', // No
     negative: '#fb923c',     // No+
     strongNegative: '#fb923c' // No++

@@ -21,7 +21,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          New <span className={styles.highlight}>CharMTI</span> Test
+         <span className={styles.highlight}>CharmTi</span> Test
         </h1>
 
         <p className={styles.description}>
@@ -33,13 +33,13 @@ export default function Home() {
             className={styles.startButton}
             onClick={() => handleStartTest(60)}
           >
-            간편테스트 60문항
+            60문항 테스트
           </button>
           <button
             className={styles.startButton}
             onClick={() => handleStartTest(120)}
           >
-            심층테스트 120문항
+            120문항 테스트
           </button>
         </div>
 

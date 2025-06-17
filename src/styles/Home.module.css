@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, rgb(0, 0, 0), #fcc); /* 부드러운 그라데이션 배경 */
+  background: linear-gradient(135deg, rgb(10, 11, 11), rgb(131, 251, 101)); /* 부드러운 그라데이션 배경 */
   color: #fff;
   font-family: 'Arial', sans-serif;
   text-align: center;
@@ -20,7 +20,7 @@
   justify-content: center;
   align-items: center;
   max-width: 900px;
-  width: 80%;
+  width: 100%;
 }
 
 .title {
