@@ -109,14 +109,14 @@ const TestPage = () => {
             style={{ backgroundColor: buttonColors.positive }}
             onClick={() => handleAnswer(2)}
           >
-            ⭕ 중간 그렇다
+            ⭕ 보통 그렇다
           </button>
           <button
             className={styles.answerButton}
             style={{ backgroundColor: buttonColors.mildPositive }}
             onClick={() => handleAnswer(1)}
           >
-            ⭕ 조금 그렇다
+            ⭕ 약간 그렇다
           </button>
           <button
             className={styles.answerButton}
@@ -130,14 +130,14 @@ const TestPage = () => {
             style={{ backgroundColor: buttonColors.mildNegative }}
             onClick={() => handleAnswer(-1)}
           >
-            ❌ 조금 아니다 
+            ❌ 약간 아니다 
           </button>
           <button
             className={styles.answerButton}
             style={{ backgroundColor: buttonColors.negative }}
             onClick={() => handleAnswer(-2)}
           >
-            ❌ 중간 아니다 
+            ❌ 보통 아니다 
           </button>
           <button
             className={styles.answerButton}
