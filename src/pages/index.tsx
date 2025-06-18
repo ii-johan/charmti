@@ -21,7 +21,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          🌿New<span className={styles.highlight}> CharmTi </span>Test🌿 
+          <span className={styles.highlight}>🌿CharmTi🌿</span> 
         </h1>
         <p className={styles.description}>
           My Mbti+Charm Style
@@ -44,7 +44,7 @@ export default function Home() {
           </button>
         </div>
         <p className={styles.description}>
-          🟡16개 성격유형과 4개 매력유형🔵
+          🟡16성격유형과 4매력유형🟡
         </p>
         
       </main>
