@@ -69,15 +69,15 @@ const ResultPage = () => {
   const { mbtiType, charMtiType, percentages, mbtiDescription, charMtiADescription, charMtiCDescription } = result;
 
   const mbtiAxesData = [
-    { leftType: 'E', rightType: 'I', leftLabel: '외향형', rightLabel: '내향형', leftPercentage: percentages['E'] || 50, rightPercentage: percentages['I'] || 50 },
-    { leftType: 'S', rightType: 'N', leftLabel: '감각형', rightLabel: '직관형', leftPercentage: percentages['S'] || 50, rightPercentage: percentages['N'] || 50 },
-    { leftType: 'T', rightType: 'F', leftLabel: '사고형', rightLabel: '감정형', leftPercentage: percentages['T'] || 50, rightPercentage: percentages['F'] || 50 },
-    { leftType: 'J', rightType: 'P', leftLabel: '판단형', rightLabel: '인식형', leftPercentage: percentages['J'] || 50, rightPercentage: percentages['P'] || 50 },
+    { leftType: 'E', rightType: 'I', leftLabel: '<--외향형(외부에서 에너지를 얻음)', rightLabel: '내향형(내부에서 에너지를 얻음)-->', leftPercentage: percentages['E'] || 50, rightPercentage: percentages['I'] || 50 },
+    { leftType: 'S', rightType: 'N', leftLabel: '<--감각형(가시적인 현재에 집중함)', rightLabel: '직관형(추상적인 세계를 상상함)-->', leftPercentage: percentages['S'] || 50, rightPercentage: percentages['N'] || 50 },
+    { leftType: 'T', rightType: 'F', leftLabel: '<--사고형(논리와 원칙으로 판단함)', rightLabel: '감정형(관계와 상황따라 판단함)-->', leftPercentage: percentages['T'] || 50, rightPercentage: percentages['F'] || 50 },
+    { leftType: 'J', rightType: 'P', leftLabel: '<--판단형(계획,체계적으로 생활함)', rightLabel: '인식형(자유,즉흥적으로 생활함)-->', leftPercentage: percentages['J'] || 50, rightPercentage: percentages['P'] || 50 },
   ];
 
   const charMtiAxesData = [
-    { leftType: 'A', rightType: 'B', leftLabel: '안정형', rightLabel: '열정형', leftPercentage: percentages['A'] || 50, rightPercentage: percentages['B'] || 50 },
-    { leftType: 'C', rightType: 'D', leftLabel: '매력형', rightLabel: '찌질형', leftPercentage: percentages['C'] || 50, rightPercentage: percentages['D'] || 50 },
+    { leftType: 'A', rightType: 'B', leftLabel: '<--안정형(평온하고 낙천적인 기질)', rightLabel: '열정형(예민하고 비판적인 기질)-->', leftPercentage: percentages['A'] || 50, rightPercentage: percentages['B'] || 50 },
+    { leftType: 'C', rightType: 'D', leftLabel: '<--매력형(당당하고 매력적인 기질)', rightLabel: '관망형(주저하고 소극적인 기질)-->', leftPercentage: percentages['C'] || 50, rightPercentage: percentages['D'] || 50 },
   ];
 
   return (
