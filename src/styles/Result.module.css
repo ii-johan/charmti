@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); /* 보라색-파란색 그라데이션 */
+  background: linear-gradient(135deg, #2e3032 0%, #2575fc 100%); /* 보라색-파란색 그라데이션 */
   color: #fff;
   font-family: 'Arial', sans-serif;
   text-align: center;
@@ -144,7 +144,7 @@
 
 .barFillLeft {
   height: 100%;
-  background-color: #288644; /* 왼쪽 지표 색상 */
+  background-color: #349150; /* 왼쪽 지표 색상 */
   transition: width 0.8s ease-out;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -152,7 +152,7 @@
 
 .barFillRight {
   height: 100%;
-  background-color: #a28504; /* 오른쪽 지표 색상 */
+  background-color: #a38a26; /* 오른쪽 지표 색상 */
   transition: width 0.8s ease-out;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;

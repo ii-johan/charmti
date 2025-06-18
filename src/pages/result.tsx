@@ -88,7 +88,7 @@ const ResultPage = () => {
       </Head>
 
       <main className={styles.mainContent}>
-        <h1 className={styles.resultTitle}>My CharmTi Style</h1>
+        <h1 className={styles.resultTitle}> </h1>
         <div className={styles.typeDisplay}>
           <span className={styles.mbtiType}>{mbtiType}</span>
           <span className={styles.charMtiHyphen}>-</span>

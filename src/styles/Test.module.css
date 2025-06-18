@@ -115,7 +115,7 @@
 
 .progressBarContainer {
   width: 80%;
-  background-color: rgba(240, 255, 166, 0.3);
+  background-color: rgb(136, 135, 157);
   border-radius: 10px;
   height: 15px;
   overflow: hidden;
@@ -125,7 +125,7 @@
 
 .progressBar {
   height: 100%;
-  background-color: #f7d633; /* ProgressBar 색상 */
+  background-color: #fffcbb; /* ProgressBar 색상 */
   border-radius: 10px;
   transition: width 0.3s ease-out;
 }
