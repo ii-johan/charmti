@@ -25,7 +25,7 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          MBTI유형+매력유형
+          MBTI유형+매력유형=나의 성격과 매력
         </p>
 
         <div className={styles.buttonContainer}>
@@ -44,7 +44,7 @@ export default function Home() {
         </div>
 
         <p className={styles.footerText}>
-          Here are my two cents.
+         To error is human, to forgive is divine.
         </p>
       </main>
     </div>
