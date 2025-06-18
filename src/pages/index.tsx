@@ -44,7 +44,7 @@ export default function Home() {
           </button>
         </div>
         <p className={styles.description}>
-          Here are my Mbti+Charm Cents.   새로운 테스트로 알아보는 성격과 매력지수.
+          Here are my Mbti+Charm Cents.   테스트로 알아보는 성격과 매력
         </p>
         
       </main>
