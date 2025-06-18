@@ -23,9 +23,8 @@ export default function Home() {
         <h1 className={styles.title}>
          <span className={styles.highlight}>CharmTi</span> Test
         </h1>
-
         <p className={styles.description}>
-          MBTI유형+매력유형=나의 성격과 매력
+          Mbti+Charm 테스트를 통해 나의 성격과 매력지수를 알아보세요!
         </p>
 
         <div className={styles.buttonContainer}>
@@ -44,7 +43,7 @@ export default function Home() {
         </div>
 
         <p className={styles.footerText}>
-         To error is human, to forgive is divine.
+         Here are my two cents. To error is human, to forgive is divine.
         </p>
       </main>
     </div>
