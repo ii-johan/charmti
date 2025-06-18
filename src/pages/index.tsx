@@ -21,10 +21,10 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-         <span className={styles.highlight}>CharmTi</span> Test
+         <span className={styles.highlight}>CharmTi</span> 
         </h1>
         <p className={styles.description}>
-          Mbti+Charm 테스트를 통해 나의 성격과 매력지수를 알아보세요!
+          Mbti+Charm 테스트를 통해 나만의 성격과 매력지수를 알아보세요!
         </p>
 
         <div className={styles.buttonContainer}>
@@ -43,7 +43,7 @@ export default function Home() {
         </div>
 
         <p className={styles.footerText}>
-         Here are my two cents. To error is human, to forgive is divine.
+         To error is human, to forgive divine.
         </p>
       </main>
     </div>

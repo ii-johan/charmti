@@ -83,12 +83,12 @@ const ResultPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>CharMTI 결과: {mbtiType}-{charMtiType}</title>
+        <title>CharmTi 결과: {mbtiType}-{charMtiType}</title>
         <meta name="description" content={`My CharMTI Style ${mbtiType}-${charMtiType}입니다!`} />
       </Head>
 
       <main className={styles.mainContent}>
-        <h1 className={styles.resultTitle}>My CharMTI Style</h1>
+        <h1 className={styles.resultTitle}>My CharmTi Style</h1>
         <div className={styles.typeDisplay}>
           <span className={styles.mbtiType}>{mbtiType}</span>
           <span className={styles.charMtiHyphen}>-</span>
