@@ -102,49 +102,49 @@ const TestPage = () => {
             style={{ backgroundColor: buttonColors.strongPositive }}
             onClick={() => handleAnswer(3)}
           >
-            ⭕ 매우 그렇다 ⭕
+            ⭕ 매우 그렇다
           </button>
           <button
             className={styles.answerButton}
             style={{ backgroundColor: buttonColors.positive }}
             onClick={() => handleAnswer(2)}
           >
-            ⭕ 중간 그렇다 ⭕
+            ⭕ 중간 그렇다
           </button>
           <button
             className={styles.answerButton}
             style={{ backgroundColor: buttonColors.mildPositive }}
             onClick={() => handleAnswer(1)}
           >
-            ⭕ 조금 그렇다 ⭕
+            ⭕ 조금 그렇다
           </button>
           <button
             className={styles.answerButton}
             style={{ backgroundColor: buttonColors.neutral }}
             onClick={() => handleAnswer(0)}
           >
-            ❓ 잘 모르겠다 ❓
+            ❓ 잘 모르겠다 
           </button>
           <button
             className={styles.answerButton}
             style={{ backgroundColor: buttonColors.mildNegative }}
             onClick={() => handleAnswer(-1)}
           >
-            ❌ 조금 아니다 ❌
+            ❌ 조금 아니다 
           </button>
           <button
             className={styles.answerButton}
             style={{ backgroundColor: buttonColors.negative }}
             onClick={() => handleAnswer(-2)}
           >
-            ❌ 중간 아니다 ❌
+            ❌ 중간 아니다 
           </button>
           <button
             className={styles.answerButton}
             style={{ backgroundColor: buttonColors.strongNegative }}
             onClick={() => handleAnswer(-3)}
           >
-            ❌ 매우 아니다 ❌
+            ❌ 매우 아니다 
           </button>
         </div>
         <div className={styles.progressBarContainer}>
