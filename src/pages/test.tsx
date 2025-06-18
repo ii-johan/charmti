@@ -44,9 +44,9 @@ const TestPage = () => {
     positive: '#bef264',     // Yes+
     mildPositive: '#bef264', // Yes
     neutral: '#99bb',      // Mid
-    mildNegative: '#fb923c', // No
-    negative: '#fb923c',     // No+
-    strongNegative: '#fb923c' // No++
+    mildNegative: '#ffcc80', // No
+    negative: '#ffcc80',     // No+
+    strongNegative: '#ffcc80' // No++
   };
 
   // 답변 처리 함수
@@ -102,49 +102,49 @@ const TestPage = () => {
             style={{ backgroundColor: buttonColors.strongPositive }}
             onClick={() => handleAnswer(3)}
           >
-            Yes++
+            ⭕ 매우 그렇다 ⭕
           </button>
           <button
             className={styles.answerButton}
             style={{ backgroundColor: buttonColors.positive }}
             onClick={() => handleAnswer(2)}
           >
-            Yes+
+            ⭕ 중간 그렇다 ⭕
           </button>
           <button
             className={styles.answerButton}
             style={{ backgroundColor: buttonColors.mildPositive }}
             onClick={() => handleAnswer(1)}
           >
-            Yes
+            ⭕ 조금 그렇다 ⭕
           </button>
           <button
             className={styles.answerButton}
             style={{ backgroundColor: buttonColors.neutral }}
             onClick={() => handleAnswer(0)}
           >
-            Mid
+            ❓ 잘 모르겠다 ❓
           </button>
           <button
             className={styles.answerButton}
             style={{ backgroundColor: buttonColors.mildNegative }}
             onClick={() => handleAnswer(-1)}
           >
-            No
+            ❌ 조금 아니다 ❌
           </button>
           <button
             className={styles.answerButton}
             style={{ backgroundColor: buttonColors.negative }}
             onClick={() => handleAnswer(-2)}
           >
-            No+
+            ❌ 중간 아니다 ❌
           </button>
           <button
             className={styles.answerButton}
             style={{ backgroundColor: buttonColors.strongNegative }}
             onClick={() => handleAnswer(-3)}
           >
-            No++
+            ❌ 매우 아니다 ❌
           </button>
         </div>
         <div className={styles.progressBarContainer}>

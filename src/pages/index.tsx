@@ -24,7 +24,8 @@ export default function Home() {
          <span className={styles.highlight}>✿CharmTi✿</span> 
         </h1>
         <p className={styles.description}>
-          Here are my two cents.
+          ❤️🧡💛💚🩵💙💜
+
         </p>
         
 
@@ -33,17 +34,17 @@ export default function Home() {
             className={styles.startButton}
             onClick={() => handleStartTest(60)}
           >
-            60문항 간편 테스트
+            간편테스트🍀60문항
           </button>
           <button
             className={styles.startButton}
             onClick={() => handleStartTest(120)}
           >
-            120문항 상세 테스트
+            상세테스트🍀120문항
           </button>
         </div>
         <p className={styles.description}>
-          Mbti+Charm 테스트를 통해 나만의 성격과 매력지수를 알아보세요!
+          Here are my Mbti+Charm Cents.   새로운 테스트로 알아보는 성격과 매력지수.
         </p>
         
       </main>
