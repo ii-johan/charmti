@@ -69,15 +69,15 @@ const ResultPage = () => {
   const { mbtiType, charMtiType, percentages, mbtiDescription, charMtiADescription, charMtiCDescription } = result;
 
   const mbtiAxesData = [
-    { leftType: 'E', rightType: 'I', leftLabel: '⬅ 외향형 (외부적 충전)', rightLabel: '(내부적 충전) 내향형 ➡', leftPercentage: percentages['E'] || 50, rightPercentage: percentages['I'] || 50 },
-    { leftType: 'S', rightType: 'N', leftLabel: '⬅ 감각형 (가시적 세계)', rightLabel: '(상상적 세계) 직관형 ➡', leftPercentage: percentages['S'] || 50, rightPercentage: percentages['N'] || 50 },
-    { leftType: 'T', rightType: 'F', leftLabel: '⬅ 사고형 (원칙적 결정)', rightLabel: '(융통적 결정) 감정형 ➡', leftPercentage: percentages['T'] || 50, rightPercentage: percentages['F'] || 50 },
-    { leftType: 'J', rightType: 'P', leftLabel: '⬅ 판단형 (계획적 생활)', rightLabel: '(즉흥적 생활) 인식형 ➡', leftPercentage: percentages['J'] || 50, rightPercentage: percentages['P'] || 50 },
+    { leftType: 'E', rightType: 'I', leftLabel: '⬅E 외향형(외부적충전)', rightLabel: '(내부적충전)내향형 I➡', leftPercentage: percentages['E'] || 50, rightPercentage: percentages['I'] || 50 },
+    { leftType: 'S', rightType: 'N', leftLabel: '⬅S 감각형(가시적세계)', rightLabel: '(상상적세계)직관형 N➡', leftPercentage: percentages['S'] || 50, rightPercentage: percentages['N'] || 50 },
+    { leftType: 'T', rightType: 'F', leftLabel: '⬅T 사고형(원칙적결정)', rightLabel: '(융통적결정)감정형 F➡', leftPercentage: percentages['T'] || 50, rightPercentage: percentages['F'] || 50 },
+    { leftType: 'J', rightType: 'P', leftLabel: '⬅J 판단형(계획적생활)', rightLabel: '(즉흥적생활)인식형 P➡', leftPercentage: percentages['J'] || 50, rightPercentage: percentages['P'] || 50 },
   ];
 
   const charMtiAxesData = [
-    { leftType: 'A', rightType: 'B', leftLabel: '⬅ 안정형 (낙천적 평온)', rightLabel: '(신경적 예민) 열정형 ➡', leftPercentage: percentages['A'] || 50, rightPercentage: percentages['B'] || 50 },
-    { leftType: 'C', rightType: 'D', leftLabel: '⬅ 매력형 (주도적 세련)', rightLabel: '(소극적 촌티) 관망형 ➡', leftPercentage: percentages['C'] || 50, rightPercentage: percentages['D'] || 50 },
+    { leftType: 'A', rightType: 'B', leftLabel: '⬅A 안정형(낙천적평온)', rightLabel: '(신경적예민)열정형 B➡', leftPercentage: percentages['A'] || 50, rightPercentage: percentages['B'] || 50 },
+    { leftType: 'C', rightType: 'D', leftLabel: '⬅C 매력형(주도적세련)', rightLabel: '(소극적촌티)관망형 D➡', leftPercentage: percentages['C'] || 50, rightPercentage: percentages['D'] || 50 },
   ];
 
   return (

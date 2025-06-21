@@ -67,9 +67,9 @@ export const testStatements: Statement[] = [
   // J (판단형) / P (인식형)
   { id: 31, statement: "내 방은 깨끗하게 정리되어 있다.", type: ['J'] },
   { id: 32, statement: "아무 계획없이 하루를 멍때리며 보낼 때가 많다.", type: ['P'] },
-  { id: 33, statement: "작업을 계획적으로 하여 마감시간보다 빨리 마친다.", type: ['J'] },
+  { id: 33, statement: "회사에서 일을 계획적으로 해 마감시간보다 빨리 마친다.", type: ['J'] },
   { id: 34, statement: "새로운 경험일지라도 주저않고 적극적으로 시도해본다.", type: ['P'] },
-  { id: 35, statement: "전체 목표와 세밀한 계획표를 짜서 일을 처리하는 편이다.", type: ['J'] },
+  { id: 35, statement: "전체 목표와 세밀한 계획표를 짜서 일을 시작한다.", type: ['J'] },
   { id: 36, statement: "마감시간에 쫓겨 부랴부랴 일하는 편이다.", type: ['P'] },
   { id: 37, statement: "한번 결정을 내리면 뒤돌아보지 않고 진행한다.", type: ['J'] },
   { id: 38, statement: "일을 진행할 때 상황에 따라 계획을 자주 변경한다.", type: ['P'] },
@@ -145,16 +145,16 @@ export const testStatements: Statement[] = [
   { id: 90, statement: "다른 사람의 감정상태가 어떤지 많이 신경쓴다.", type: ['F'] },
 
   // J (판단형) / P (인식형)
-  { id: 91, statement: "계획을 못지키면 최대한 빨리 원래 계획대로 복귀한다.", type: ['J'] },
-  { id: 92, statement: "여행일정이 갑자기 바뀌어도 즐겁다.", type: ['P'] },
+  { id: 91, statement: "무질서한 상태를 싫어해 줄과 짝을 맞추는 질서를 좋아한다.", type: ['J'] },
+  { id: 92, statement: "계획되었던 일정이 갑자기 바뀌어도 별로 짜증나지 않는다.", type: ['P'] },
   { id: 93, statement: "액자가 삐뚤어져 있으면 엄청 신경쓰인다.", type: ['J'] },
-  { id: 94, statement: "즉흥적인 활동이나 만남을 즐거워한다.", type: ['P'] },
+  { id: 94, statement: "계획에 없던 즉흥적인 활동이나 만남을 즐거워한다.", type: ['P'] },
   { id: 95, statement: "여러가지 일을 동시에 처리하면 집중이 안된다.", type: ['J'] },
   { id: 96, statement: "여러 가능성을 열어두고 마지막까지 고민한다.", type: ['P'] },
-  { id: 97, statement: "계획이 서있지 않으면 불안하다.", type: ['J'] },
+  { id: 97, statement: "외출하고 돌아온 후 손씻지 않는 사람에게 잔소리한다.", type: ['J'] },
   { id: 98, statement: "일단 해보며 배우는 스타일이다.", type: ['P'] },
   { id: 99, statement: "처음부터 끝까지 흐름을 예측해야 안심이 된다.", type: ['J'] },
-  { id: 100, statement: "정리정돈보다 자유로운 분위기가 편하다.", type: ['P'] },
+  { id: 100, statement: "정리정돈 상태보다 자유로운 분위기가 마음이 편하다.", type: ['P'] },
 
   // CharMTI - Atlas(A) / Blaze(B) 문항 (감정의 동요 축)
   { id: 101, statement: "한국축구가 형편없어도 별로 화내지 않는다.", type: ['A'] },
